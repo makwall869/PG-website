@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Mukunda Boys PG Hostel – Mangalagiri</title>
+<meta name="description" content="Mukunda PG Hostel, Ratnala Cheruvu Road, beside Durgamatha Temple, near the underpass, Mangalagiri. Good homely food, supportive management and easy transport. Rated 4.5 on Google.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Kaushan+Script&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --red:#c8102e; --red-dark:#9e0b22; --navy:#12306b; --navy-dark:#0b1f4a;
+    --yellow:#ffd60a; --cream:#fff8e7; --ink:#1b1f2a; --muted:#5b6275;
+    --green:#1f8f3a; --teal:#1488b8; --purple:#5b2a86; --orange:#ef6c1a; --pink:#e0245e;
+  }
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{font-family:'Poppins',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6}
+  a{color:inherit}
+  .wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+
+  /* top strip */
+  .strip{background:var(--navy-dark);color:#fff;font-size:14px}
+  .strip .wrap{display:flex;justify-content:space-between;gap:12px;padding-top:8px;padding-bottom:8px;flex-wrap:wrap}
+  .strip b{color:var(--yellow)}
+
+  /* nav */
+  nav{background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 2px 12px rgba(0,0,0,.06)}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;padding-top:12px;padding-bottom:12px}
+  .logo{font-family:'Anton',sans-serif;font-size:22px;letter-spacing:.5px;color:var(--red);text-decoration:none;line-height:1.1}
+  .logo span{display:block;font-family:'Poppins';font-weight:700;font-size:11px;letter-spacing:2px;color:var(--navy)}
+  .navlinks{display:flex;gap:22px;font-weight:600;font-size:15px}
+  .navlinks a{text-decoration:none;color:var(--navy)}
+  .navlinks a:hover{color:var(--red)}
+  .btn{display:inline-flex;align-items:center;gap:8px;padding:12px 22px;border-radius:999px;font-weight:700;text-decoration:none;border:0;cursor:pointer;font-size:15px;font-family:inherit}
+  .btn-wa{background:#25d366;color:#fff}
+  .btn-red{background:var(--red);color:#fff}
+  .btn-ghost{background:#fff;color:var(--navy);border:2px solid var(--navy)}
+  .btn:hover{filter:brightness(1.05);transform:translateY(-1px)}
+
+  /* hero */
+  .hero{position:relative;overflow:hidden;background:
+      radial-gradient(1200px 500px at 85% -10%, #cfe8ff 0%, transparent 60%),
+      linear-gradient(180deg,#fffbea 0%, var(--cream) 100%);padding:56px 0 70px}
+  .hero .wrap{display:grid;grid-template-columns:1.25fr .9fr;gap:40px;align-items:center}
+  .lotus{color:var(--red);font-size:26px}
+  .hero h1{font-family:'Anton',sans-serif;font-weight:400;color:var(--red);font-size:clamp(44px,7vw,84px);line-height:1;letter-spacing:1px;text-shadow:3px 3px 0 rgba(0,0,0,.08)}
+  .pill{display:inline-block;margin-top:14px;background:var(--navy);color:var(--yellow);font-family:'Anton',sans-serif;font-size:clamp(26px,4.2vw,46px);padding:6px 28px;border-radius:999px;letter-spacing:1px;box-shadow:0 6px 0 var(--navy-dark)}
+  .script{font-family:'Kaushan Script',cursive;color:var(--navy);font-size:clamp(22px,3vw,30px);margin:22px 0 8px;display:flex;align-items:center;gap:14px}
+  .script:before,.script:after{content:"";height:2px;width:50px;background:var(--navy);opacity:.6}
+  .hero p.lead{font-size:17px;color:var(--muted);max-width:520px}
+  .hero .ctas{display:flex;gap:12px;flex-wrap:wrap;margin-top:24px}
+  .where{margin-top:22px;display:flex;align-items:center;gap:10px;font-weight:700;color:var(--navy)}
+  .where svg{flex:none}
+
+  .hero-card{position:relative;background:var(--navy);border-radius:24px;padding:30px;color:#fff;box-shadow:0 20px 50px rgba(18,48,107,.3)}
+  .hero-card h3{font-family:'Kaushan Script',cursive;font-weight:400;font-size:34px;color:var(--yellow);line-height:1.15}
+  .hero-card ul{list-style:none;margin-top:16px;display:grid;gap:10px}
+  .hero-card li{display:flex;gap:10px;align-items:center;font-weight:500}
+  .hero-card li:before{content:"✓";display:grid;place-items:center;width:24px;height:24px;border-radius:50%;background:var(--yellow);color:var(--navy);font-weight:800;font-size:13px;flex:none}
+  .stamp{position:absolute;top:-22px;right:-14px;background:var(--red);color:#fff;font-family:'Anton',sans-serif;font-size:22px;line-height:1.05;padding:14px 18px;transform:rotate(6deg);border-radius:6px;box-shadow:0 8px 20px rgba(200,16,46,.4);text-align:center}
+
+  /* sections */
+  section{padding:70px 0}
+  .eyebrow{font-weight:800;letter-spacing:2px;font-size:13px;color:var(--red);text-transform:uppercase}
+  h2{font-family:'Anton',sans-serif;font-weight:400;color:var(--navy);font-size:clamp(32px,4.5vw,46px);letter-spacing:.5px;line-height:1.1;margin:6px 0 10px}
+  .sub{color:var(--muted);max-width:620px}
+
+  .amen{background:#fff}
+  .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+  .card{display:flex;gap:16px;align-items:center;padding:22px;border-radius:18px;background:var(--cream);border:1px solid #f1e6c8}
+  .ic{width:62px;height:62px;border-radius:50%;display:grid;place-items:center;flex:none;color:#fff}
+  .ic svg{width:30px;height:30px}
+  .card h4{font-size:18px;color:var(--navy);line-height:1.25}
+  .card p{font-size:14px;color:var(--muted)}
+
+  .mess{background:linear-gradient(135deg,var(--red) 0%,var(--red-dark) 100%);color:#fff;position:relative;overflow:hidden}
+  .mess .wrap{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:center}
+  .mess h2{color:#fff}
+  .mess .sub{color:#ffe3e8}
+  .mess-badge{font-family:'Anton',sans-serif;font-size:clamp(40px,6vw,64px);line-height:1;background:#fff;color:var(--red);display:inline-block;padding:12px 24px;transform:rotate(-3deg);border-radius:8px;box-shadow:0 10px 0 rgba(0,0,0,.15)}
+  .plate{width:100%;max-width:360px;margin:0 auto;display:block}
+
+  .home{text-align:center;background:var(--cream)}
+  .home .feel{font-family:'Kaushan Script',cursive;color:var(--navy);font-size:clamp(34px,5vw,54px);display:inline-block;background:var(--yellow);padding:6px 30px;transform:rotate(-3deg);margin-top:10px}
+  .points{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:40px;text-align:left}
+  .point{background:#fff;border-radius:18px;padding:24px;border-top:5px solid var(--red)}
+  .point:nth-child(2){border-color:var(--navy)}
+  .point:nth-child(3){border-color:var(--yellow)}
+  .point h4{color:var(--navy);font-size:18px;margin-bottom:4px}
+  .point p{color:var(--muted);font-size:15px}
+
+  .contact{background:var(--navy);color:#fff}
+  .contact .wrap{display:grid;grid-template-columns:1fr 1fr;gap:36px}
+  .contact h2{color:#fff}
+  .contact .sub{color:#c9d5f0}
+  .info{margin-top:24px;display:grid;gap:16px}
+  .info > div{display:flex;gap:14px;align-items:flex-start}
+  .info .ic{width:48px;height:48px}
+  .info .ic svg{width:22px;height:22px}
+  .info b{display:block;color:var(--yellow);font-size:13px;letter-spacing:1px;text-transform:uppercase}
+  .info span{font-size:18px;font-weight:600}
+  form{background:#fff;color:var(--ink);border-radius:22px;padding:28px;display:grid;gap:14px}
+  form h3{color:var(--navy);font-size:22px}
+  label{font-size:13px;font-weight:700;color:var(--navy)}
+  input,select,textarea{width:100%;padding:12px 14px;border:1.5px solid #d8dce6;border-radius:12px;font:inherit;font-size:15px;margin-top:4px;background:#fafbff}
+  input:focus,select:focus,textarea:focus{outline:2px solid var(--navy);border-color:var(--navy)}
+  .row{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+  .note{font-size:12px;color:var(--muted)}
+
+  footer{background:var(--navy-dark);color:#b9c6e6;text-align:center;padding:26px 20px;font-size:14px}
+  footer b{color:var(--yellow)}
+
+  .float-wa{position:fixed;right:18px;bottom:18px;z-index:30;width:60px;height:60px;border-radius:50%;background:#25d366;display:grid;place-items:center;box-shadow:0 10px 24px rgba(0,0,0,.25)}
+  .float-wa svg{width:32px;height:32px;fill:#fff}
+
+  @media (max-width:860px){
+    .navlinks{display:none}
+    .hero .wrap,.mess .wrap,.contact .wrap{grid-template-columns:1fr}
+    .grid,.points{grid-template-columns:1fr 1fr}
+    .stamp{right:6px}
+  }
+  @media (max-width:560px){
+    .grid,.points,.row{grid-template-columns:1fr}
+    .strip .wrap{justify-content:center;text-align:center}
+    nav .btn{padding:10px 14px;font-size:13px}
+    section{padding:54px 0}
+  }
+</style>
+</head>
+<body>
+
+<div class="strip">
+  <div class="wrap">
+    <div>📍 Beside Durgamatha Temple, <b>Mangalagiri</b></div>
+    <div>📞 <b>+91 76709 19336</b> · ⭐ 4.5 on Google</div>
+  </div>
+</div>
+
+<nav>
+  <div class="wrap">
+    <a class="logo" href="#top">MUKUNDA<span>BOYS PG HOSTEL</span></a>
+    <div class="navlinks">
+      <a href="#facilities">Facilities</a>
+      <a href="#mess">Mess</a>
+      <a href="#why">Why Us</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <a class="btn btn-red" href="tel:+917670919336">Call Now</a>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="lotus">❀</div>
+      <h1>MUKUNDA</h1>
+      <div class="pill">BOYS PG HOSTEL</div>
+      <div class="script">Your Comfort… Our Priority</div>
+      <p class="lead">A clean, safe and comfortable boys PG at Ratnalacheruvu Underpass, Mangalagiri. Free Wi-Fi, 24×7 water, power backup and homely food. Rated 4.5★ on Google by our residents.</p>
+      <div class="ctas">
+        <a class="btn btn-wa" id="heroWa" href="https://wa.me/917670919336?text=Hi%2C%20I%20want%20to%20know%20about%20room%20availability%20at%20Mukunda%20PG%20Hostel." target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="#fff"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.5.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+          WhatsApp Us
+        </a>
+        <a class="btn btn-ghost" href="#facilities">See Facilities</a>
+      </div>
+      <div class="where">
+        <svg width="26" height="26" viewBox="0 0 24 24" fill="#c8102e"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg>
+        Beside Durgamatha Temple, Mangalagiri
+      </div>
+    </div>
+
+    <div class="hero-card">
+      <div class="stamp">4.5 ★<br>ON GOOGLE</div>
+      <h3>Feel at home<br>in Mangalagiri…</h3>
+      <ul>
+        <li>Comfortable &amp; clean rooms</li>
+        <li>Free Wi-Fi</li>
+        <li>24×7 water</li>
+        <li>Safe &amp; secure environment</li>
+        <li>Power backup</li>
+        <li>Good, homely food</li>
+      </ul>
+    </div>
+  </div>
+</header>
+
+<section class="amen" id="facilities">
+  <div class="wrap">
+    <div class="eyebrow">Facilities</div>
+    <h2>Everything you need, under one roof</h2>
+    <p class="sub">Focus on your studies or work. We take care of food and stay.</p>
+    <div class="grid">
+      <div class="card">
+        <div class="ic" style="background:var(--navy)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M3 7v11h2v-2h14v2h2v-6a3 3 0 0 0-3-3h-7v5H5V7H3zm4.5 5A2 2 0 1 0 7.5 8a2 2 0 0 0 0 4z"/></svg></div>
+        <div><h4>Comfortable Rooms</h4><p>Clean, comfortable rooms to rest well.</p></div>
+      </div>
+      <div class="card">
+        <div class="ic" style="background:var(--green)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 18.5a1.5 1.5 0 1 0 0 3 1.5 1.5 0 0 0 0-3zM2 8.8l1.6 1.6a12 12 0 0 1 16.8 0L22 8.8a14.3 14.3 0 0 0-20 0zm4 4 1.6 1.6a6.4 6.4 0 0 1 8.8 0l1.6-1.6a8.6 8.6 0 0 0-12 0z"/></svg></div>
+        <div><h4>Free Wi-Fi</h4><p>Stay connected for classes and work.</p></div>
+      </div>
+      <div class="card">
+        <div class="ic" style="background:var(--teal)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M4 4h9v3h4a3 3 0 0 1 3 3v3h-3v-3h-4v1H4V4zm13 11s-2 2.4-2 3.8a2 2 0 0 0 4 0C19 17.4 17 15 17 15z"/></svg></div>
+        <div><h4>24×7 Water</h4><p>Water any time, day or night.</p></div>
+      </div>
+      <div class="card">
+        <div class="ic" style="background:var(--purple)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M7 2v8a2 2 0 0 0 2 2v10h2V12a2 2 0 0 0 2-2V2h-1.5v6h-1V2h-1v6h-1V2H7zm9 0c-1.7 0-3 2-3 5v6h2v9h2V2h-1z"/></svg></div>
+        <div><h4>Good Food</h4><p>Homely, hygienic food every day.</p></div>
+      </div>
+      <div class="card">
+        <div class="ic" style="background:var(--orange)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2 4 5v6c0 5 3.4 9.7 8 11 4.6-1.3 8-6 8-11V5l-8-3zm-1.2 14.2-3.5-3.5 1.4-1.4 2.1 2.1 4.9-4.9 1.4 1.4-6.3 6.3z"/></svg></div>
+        <div><h4>Safe &amp; Secure</h4><p>A safe environment for every resident.</p></div>
+      </div>
+      <div class="card">
+        <div class="ic" style="background:var(--pink)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M13 2 4 14h7l-1 8 9-12h-7l1-8z"/></svg></div>
+        <div><h4>Power Backup</h4><p>Lights and fans on during power cuts.</p></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="mess" id="mess">
+  <div class="wrap">
+    <div>
+      <div class="mess-badge">HOMELY FOOD</div>
+      <h2 style="margin-top:28px">Homely food, every day</h2>
+      <p class="sub">Food is what our residents talk about most in their reviews. Good, hygienic, home-style meals so you never miss home.</p>
+      <div style="margin-top:22px"><a class="btn" style="background:var(--yellow);color:var(--navy)" href="#contact">Ask about food &amp; rooms</a></div>
+    </div>
+    <svg class="plate" viewBox="0 0 300 300" aria-label="Meal plate illustration">
+      <circle cx="150" cy="150" r="140" fill="#2b2b33"/>
+      <circle cx="150" cy="150" r="124" fill="#3a3a45"/>
+      <ellipse cx="150" cy="185" rx="72" ry="48" fill="#fffdf6"/>
+      <g fill="#fff"><circle cx="120" cy="175" r="6"/><circle cx="140" cy="168" r="6"/><circle cx="160" cy="180" r="6"/><circle cx="180" cy="170" r="6"/><circle cx="130" cy="195" r="6"/><circle cx="170" cy="198" r="6"/><circle cx="150" cy="190" r="6"/></g>
+      <circle cx="85" cy="95" r="32" fill="#c0c3cc"/><circle cx="85" cy="95" r="26" fill="#e07b1a"/>
+      <circle cx="150" cy="70" r="32" fill="#c0c3cc"/><circle cx="150" cy="70" r="26" fill="#d9a21b"/>
+      <circle cx="215" cy="95" r="32" fill="#c0c3cc"/><circle cx="215" cy="95" r="26" fill="#c8451b"/>
+      <ellipse cx="232" cy="190" rx="34" ry="22" fill="#f3d48a" transform="rotate(-20 232 190)"/>
+      <path d="M60 175c10-30 30-35 35-30s-15 30-35 30z" fill="#8bc34a"/>
+    </svg>
+  </div>
+</section>
+
+<section class="home" id="why">
+  <div class="wrap">
+    <div class="eyebrow">Why stay with us</div>
+    <h2>Why residents choose Mukunda</h2>
+    <div class="feel">Feel Like Home…</div>
+    <div class="points">
+      <div class="point"><h4>Easy to find</h4><p>At Ratnalacheruvu Underpass, beside Durgamatha Temple. Easy to reach and easy to travel from.</p></div>
+      <div class="point"><h4>All basics covered</h4><p>Wi-Fi, 24×7 water and power backup, plus friendly, supportive management.</p></div>
+      <div class="point"><h4>Food sorted</h4><p>Good, hygienic homely food every day, so you never have to cook.</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="contact" id="contact">
+  <div class="wrap">
+    <div>
+      <div class="eyebrow" style="color:var(--yellow)">Contact</div>
+      <h2>Book your room today</h2>
+      <p class="sub">Call or WhatsApp us to check room availability, or come and see the hostel yourself.</p>
+      <div class="info">
+        <div>
+          <div class="ic" style="background:#25d366"><svg viewBox="0 0 24 24" fill="#fff"><path d="M6.6 10.8a15 15 0 0 0 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1A17 17 0 0 1 3 4c0-.6.4-1 1-1h3.5c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.3 0 .7-.2 1l-2.3 2.2z"/></svg></div>
+          <div><b>Call / WhatsApp</b><span><a href="tel:+917670919336" style="text-decoration:none">+91 76709 19336</a></span></div>
+        </div>
+        <div>
+          <div class="ic" style="background:var(--red)"><svg viewBox="0 0 24 24" fill="#fff"><path d="M12 2a7 7 0 0 0-7 7c0 5.3 7 13 7 13s7-7.7 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6.5a2.5 2.5 0 0 1 0 5z"/></svg></div>
+          <div><b>Address</b><span>Ratnala Cheruvu Rd, beside Durgamatha Temple, near underpass,<br>Mangalagiri, Andhra Pradesh 522503</span><br>
+            <a class="btn btn-ghost" style="margin-top:10px;padding:8px 16px;font-size:14px;background:transparent;color:#fff;border-color:#fff" href="https://www.google.com/maps/search/?api=1&query=Mukunda+pg+hostel+Mangalagiri&query_place_id=ChIJraPU7jj3NToRmfX6eZ8_LTI" target="_blank" rel="noopener">Open in Google Maps</a>
+          </div>
+        </div>
+        <div>
+          <div class="ic" style="background:var(--yellow)"><svg viewBox="0 0 24 24" fill="#12306b"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm1 10.4 3.2 3.2-1.4 1.4L11 13.2V6h2v6.4z"/></svg></div>
+          <div><b>Timings</b><span>Open 24 hours</span></div>
+        </div>
+      </div>
+    </div>
+
+    <form id="enq" novalidate>
+      <h3>Quick enquiry</h3>
+      <div>
+        <label for="nm">Your name</label>
+        <input id="nm" placeholder="e.g. Ravi Kumar">
+      </div>
+      <div class="row">
+        <div>
+          <label for="who">I am a</label>
+          <select id="who"><option>Student</option><option>Working professional</option><option>Parent</option></select>
+        </div>
+        <div>
+          <label for="when">Joining from</label>
+          <input id="when" type="date">
+        </div>
+      </div>
+      <div>
+        <label for="msg">Message (optional)</label>
+        <textarea id="msg" rows="3" placeholder="Room type, mess card, any question…"></textarea>
+      </div>
+      <a class="btn btn-wa" id="sendWa" href="#" target="_blank" rel="noopener" style="justify-content:center">Send on WhatsApp</a>
+      <p class="note">This opens WhatsApp with your details filled in. You can also call +91 76709 19336.</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <b>Mukunda Boys PG Hostel</b> · Beside Durgamatha Temple, Mangalagiri · +91 76709 19336<br>
+  Your Comfort… Our Priority · © 2026
+</footer>
+
+<a class="float-wa" href="https://wa.me/917670919336?text=Hi%2C%20I%20want%20to%20know%20about%20room%20availability%20at%20Mukunda%20PG%20Hostel." target="_blank" rel="noopener" aria-label="WhatsApp">
+  <svg viewBox="0 0 24 24"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm5.2 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-3.3-.8-2.8-1.1-4.5-3.9-4.7-4.1-.1-.2-1.1-1.5-1.1-2.9s.7-2 1-2.3c.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5l.8 2c.1.2.1.4 0 .5l-.4.6-.3.3c-.1.1-.3.3-.1.5.1.3.6 1.1 1.4 1.8 1 .9 1.8 1.1 2 1.3.3.1.4.1.6-.1l.8-1c.2-.3.4-.2.6-.1l1.9.9c.3.1.5.2.5.3.1.2.1.7-.1 1.2z"/></svg>
+</a>
+
+<script>
+  (function(){
+    var f = document.getElementById('enq');
+    var link = document.getElementById('sendWa');
+    function build(){
+      var nm = document.getElementById('nm').value.trim();
+      var who = document.getElementById('who').value;
+      var when = document.getElementById('when').value;
+      var msg = document.getElementById('msg').value.trim();
+      var t = 'Hi, I am interested in Mukunda PG Hostel.';
+      if (nm) t += '\nName: ' + nm;
+      t += '\nI am a: ' + who;
+      if (when) t += '\nJoining from: ' + when;
+      if (msg) t += '\nMessage: ' + msg;
+      link.href = 'https://wa.me/917670919336?text=' + encodeURIComponent(t);
+    }
+    f.addEventListener('input', build);
+    f.addEventListener('change', build);
+    f.addEventListener('submit', function(e){ e.preventDefault(); });
+    build();
+  })();
+</script>
+</body>
+</html>
